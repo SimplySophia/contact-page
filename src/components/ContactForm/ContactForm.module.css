@@ -3,3 +3,29 @@
     max-width: 1000px;
     margin: 0 auto;
 }
+.top_btn{
+    display: flex;
+    gap: 2rem;
+}
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.form_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form_container input {
+    height: 30px;
+    padding: 0.8px;
+}
+.form_container label{
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    background-color: white;
+    padding: 0 10px;
+}
