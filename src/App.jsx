@@ -8,8 +8,10 @@ function App() {
   return (
     <div>
       <Navbar/>
+      <main className='main_container'>
       <ContactHeader />
       <ContactForm />
+      </main>
     </div>
   )
 }

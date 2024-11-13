@@ -18,15 +18,31 @@ const ContactForm = () => {
         isOutline={true} 
         text="VIA EMAIL FORM" 
         icon={<MdEmail />} 
-        />
+      />
         <form>
           <div className={styles.form_container}>
           <label htmlFor='name'>Name</label>
-          <input type='text' name='name'></input>
+          <input type='text' name='name' />
+          </div>
+          <div className={styles.form_container}>
+          <label htmlFor='email'>Email</label>
+          <input type='text' name='email' />
+          </div>
+          <div className={styles.form_container}>
+          <label htmlFor='name'>Text</label>
+          <textarea name="textarea" rows={5} />
+          </div>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'end',
+          }}>
+          <Button text="SUBMIT BUTTON" />
           </div>
         </form>
       </div>
-      <div className={styles.contact_image}></div>
+      <div className={styles.contact_image}>
+        <img src='/images/contact-image.png' alt='contact image' />
+      </div>
     </section>
   )
 }
