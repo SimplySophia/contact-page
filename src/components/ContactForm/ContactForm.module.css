@@ -3,6 +3,7 @@
     max-width: 1000px;
     margin: 0 auto;
     align-items: end;
+    gap: 2rem;
 }
 .top_btn{
     display: flex;
@@ -38,5 +39,5 @@
     padding: 0 10px;
 }
 .contact_image img {
-    
+
 }
