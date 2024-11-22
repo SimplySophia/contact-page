@@ -1,8 +1,11 @@
 
 import styles from './Button.module.css';
-const Button = ({ isOutline, icon, text }) => {
+const Button = ({ isOutline, icon, text, ...rest }) => {
   return (
-    <button className={isOutline ? styles.outline_btn : styles.primary}>
+    <button 
+      {...rest} 
+      className={isOutline ? styles.outline_btn : styles.primary}>
+      
       {icon}
       {text}
     </button>
